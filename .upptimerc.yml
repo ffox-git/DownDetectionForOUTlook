@@ -1,12 +1,41 @@
 owner: ffox-git
 repo: DownDetectionForOUTlook
 sites:
-  - name: Microsoft
-    url: https://www.microsoft.com
-  - name: Outlook
+  - name: Outlook (Office)
+    url: https://outlook.office.com
+    expectedStatusCodes: [200, 301, 302, 401, 403]
+  - name: Outlook (Live)
     url: https://outlook.live.com
+    expectedStatusCodes: [200, 301, 302, 401, 403]
+  - name: Exchange Online
+    url: https://outlook.office365.com
+    expectedStatusCodes: [200, 301, 302, 401, 403]
+  - name: Teams
+    url: https://teams.microsoft.com
+    expectedStatusCodes: [200, 301, 302, 401, 403]
+  - name: Microsoft 365
+    url: https://www.microsoft365.com
+    expectedStatusCodes: [200, 301, 302, 401, 403]
+  - name: Office Portal
+    url: https://www.office.com
+    expectedStatusCodes: [200, 301, 302, 401, 403]
+  - name: Copilot
+    url: https://copilot.microsoft.com
+    expectedStatusCodes: [200, 301, 302, 401, 403]
+  - name: Sign-in
+    url: https://login.microsoftonline.com
+    expectedStatusCodes: [200, 301, 302, 401, 403]
+  - name: Admin Center
+    url: https://admin.microsoft.com
+    expectedStatusCodes: [200, 301, 302, 401, 403]
+  - name: OneDrive
+    url: https://onedrive.live.com
+    expectedStatusCodes: [200, 301, 302, 401, 403]
   - name: Azure Portal
     url: https://portal.azure.com
+    expectedStatusCodes: [200, 301, 302, 401, 403]
+  - name: Microsoft
+    url: https://www.microsoft.com
 status-website:
   baseUrl: /DownDetectionForOUTlook
   name: Microsoft Status
